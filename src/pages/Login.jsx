@@ -11,10 +11,11 @@ function Login() {
     e.preventDefault();
 
     try {
-      await login(correo, password);
-
+      const token = await login(correo, password);
+      console.log("TOKEN:", token);
       navigate("/dashboard");
     } catch (error) {
+      console.log(error);
       alert("Credenciales incorrectas");
     }
   };

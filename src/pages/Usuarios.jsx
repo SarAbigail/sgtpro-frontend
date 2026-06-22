@@ -105,7 +105,6 @@ function Usuarios() {
 
   return (
     <>
-      <Navbar />
       <div className="container mt-4">
         <h2>Gestión de Usuarios</h2>
         <form onSubmit={guardarUsuario} className="card p-3 mb-4">
